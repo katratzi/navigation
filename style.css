@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Hepta+Slab|Fjalla+One|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+background: #ccc; 
+  font-family: "Roboto Condensed", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+#container
+{
+    background-color: rgba(235, 235, 235, 0.8);
+    border: 1px solid #222;
+  width: 50%;
+  min-width: 480px;
+  max-width: 900px;
+  padding: 20px;
+  margin: 2em auto;
+}
+a {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Hepta Slab", serif;
+  text-align: center;
+}
+
+li {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.preformatted {
+    font-family: monospace;
+    white-space: pre;
+}
