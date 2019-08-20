@@ -8,16 +8,15 @@
 }
 
 body {
-background: #ccc; 
+  background: #ccc;
   font-family: "Roboto Condensed", "Trebuchet MS", "Lucida Sans Unicode",
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   line-height: 1.5em;
 }
 
-#container
-{
-    background-color: rgba(235, 235, 235, 0.8);
-    border: 1px solid #222;
+#container {
+  background-color: rgba(235, 235, 235, 0.8);
+  border: 1px solid #222;
   width: 50%;
   min-width: 480px;
   max-width: 900px;
@@ -28,16 +27,39 @@ a {
   font-family: "Lexend Deca", sans-serif;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Hepta Slab", serif;
   text-align: center;
 }
 
-li {
-  font-family: "Lexend Deca", sans-serif;
+/* navigation */
+/* we remove the decorations with list style */
+ul {
+  list-style-type: none;  
+  text-align: center;
+  margin: 0px;
+  padding: 4px;
 }
 
-.preformatted {
-    font-family: monospace;
-    white-space: pre;
+li {
+  display: inline;
+  font-family: "Lexend Deca", sans-serif;
+}
+/* add my own decorator for nav */
+li:before {
+  content: " ~ ";
+  padding-right: 0px;
+  color: blue;
+} 
+/* but no for the 1st child */
+li:first-child:before {
+  content: "";
+}
+
+xmp {
+  border: 1px border red;
 }

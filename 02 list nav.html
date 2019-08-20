@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+            <div id="container">
+        <h1>Navigation</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Company Factsheet</a></li>
+            </ul>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem laudantium autem amet reprehenderit reiciendis tempora perspiciatis officia nobis distinctio in nostrum doloribus illum, molestias consequuntur fugit nulla quibusdam cupiditate.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sint eligendi minus obcaecati ex quod tempora aliquid amet officia, ratione, iste incidunt. Possimus consequuntur magni accusamus, voluptatem aspernatur voluptatum eos.</p>
+        <hr>
+        <h2>Code Notes</h2>
+        <p>In this case we turn the navigation into an unordered list  &lt;ul&gt, this is a good semantic structure for what is in effect a list of links.  In order to remove the normal &#9679; circle we use some css to, in this case, remove all styling. And additionally we add in our own little decorator with a css 'content' setting.</p>
+        
+        <xmp>
+        // html unordered list
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Company Factsheet</a></li>
+        </ul>
+
+        /* set list style and also center for neatness */
+        ul {
+            list-style-type: none;  
+            text-align: center;            
+           }
+         
+        /* display inline makes them appear on the same line */
+        li {
+            display: inline;            
+           }
+        
+        /* add my own decorator for nav, 
+           but not for the 1st child in list */
+        li:before { content: " ~ "; }        
+        li:first-child:before { content: ""; }
+        </xmp>
+    </div>
+    </body>
+</html>
