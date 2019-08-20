@@ -59,7 +59,3 @@ li:before {
 li:first-child:before {
   content: "";
 }
-
-xmp {
-  border: 1px border red;
-}
