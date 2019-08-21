@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        /* my fixed navigation bar */
+        ul {
+            position: fixed;
+            top: 1em;
+            left: 20px;
+            width: 200px;
+
+            list-style-type: square;
+            padding: 10px 10px 10px 30px;
+            background-color: rgba(225, 225, 225, 1);
+            border: 1px solid #222;
+        }
+
+        /* and on smaller screens, or if we resize our window.  we go back to normal */
+        @media only screen and (max-width: 800px) {
+
+            ul {
+                position: static;
+                list-style-type: none;
+                text-align: center;
+                width: 100%;
+                border: 1px dashed #222;
+
+                margin: auto;
+                padding: 10px 10px 10px 10px;
+            }
+
+            li {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Navigation</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Company Factsheet</a></li>
+        </ul>
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem laudantium autem amet
+            reprehenderit reiciendis tempora perspiciatis officia nobis distinctio in nostrum doloribus illum, molestias
+            consequuntur fugit nulla quibusdam cupiditate.</p>
+        <hr>
+        <h2>Code Notes</h2>
+        <p>We used the 'fixed' position for our unordered list in this case. So when scrolling it will always appear in
+            the top left corner. You can position elements to any corner of the screen just based on the coordinates.
+            Then so we don't get overlapping on a smaller screen, we use a <em>@media</em> query. In this case we have
+            to override all the values to make sure looks correct.</p>
+        <hr>
+        <h3>Try scrolling and resizing.</h3>
+        <hr>
+
+        <xmp>
+        // fixed unordered list
+        ul {
+            position: fixed;
+            top: 1em;
+            left: 20px;
+            width: 200px;
+            list-style-type: square;
+            ...
+        }
+        
+        // and when we get small...less than 800px
+        // reset position to static (the default)
+        // and set it like a normal navigation list
+        @media only screen and (max-width: 800px) {
+        ul {
+            position: static;
+            list-style-type: none;
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            padding: 10px 10px 10px 10px;
+        }
+        
+        li {
+            display: inline;
+        }        
+        </xmp>
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sint eligendi minus obcaecati ex quod tempora
+            aliquid amet officia, ratione, iste incidunt. Possimus consequuntur magni accusamus, voluptatem aspernatur
+            voluptatum eos.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sint eligendi minus obcaecati ex quod tempora
+            aliquid amet officia, ratione, iste incidunt. Possimus consequuntur magni accusamus, voluptatem aspernatur
+            voluptatum eos.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos sint eligendi minus obcaecati ex quod tempora
+            aliquid amet officia, ratione, iste incidunt. Possimus consequuntur magni accusamus, voluptatem aspernatur
+            voluptatum eos.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum. Scripta periculis ei eam, te pro movet reformidans.</p>
+            <p>Tritani reprehendunt pro an, his ne
+            liber iusto. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo
+            cu, veri persius vituperata ei nec. Ad doctus gubergren duo, mel te postea suavitate. Ad doctus gubergren
+            duo, mel te postea suavitate. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod
+            malorum te. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu,
+            veri persius vituperata ei nec. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu
+            quod malorum te. Scripta periculis ei eam, te pro movet reformidans. Pri posse graeco definitiones cu, id
+            eam populo quaestio adipiscing, usu quod malorum te. Offendit eleifend moderatius ex vix, quem odio mazim et
+            qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec.</p>
+
+    </div>
+</body>
+
+</html>
