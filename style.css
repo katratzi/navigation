@@ -15,13 +15,13 @@ body {
 }
 
 #container {
-  background-color: rgba(235, 235, 235, 0.8);
+  background-color: rgba(225, 225, 225, 1);
   border: 1px solid #222;
   width: 50%;
   min-width: 480px;
   max-width: 900px;
   padding: 20px;
-  margin: 2em auto;
+  margin: 2em auto 2em auto;
 }
 a {
   font-family: "Lexend Deca", sans-serif;
@@ -36,26 +36,3 @@ h5 {
   text-align: center;
 }
 
-/* navigation */
-/* we remove the decorations with list style */
-ul {
-  list-style-type: none;  
-  text-align: center;
-  margin: 0px;
-  padding: 4px;
-}
-
-li {
-  display: inline;
-  font-family: "Lexend Deca", sans-serif;
-}
-/* add my own decorator for nav */
-li:before {
-  content: " ~ ";
-  padding-right: 0px;
-  color: blue;
-} 
-/* but no for the 1st child */
-li:first-child:before {
-  content: "";
-}
